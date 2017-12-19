@@ -1,0 +1,9 @@
+.headerContainer {
+  position: absolute;
+  top:0;
+  width:calc(100% - 55px);
+  margin-left:55px;
+  height:60px;
+  background:#fff;
+  box-shadow: 0 0 4px #ccc;
+}

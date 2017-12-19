@@ -1,12 +1,13 @@
+html {
+    height:100%;
+}
 body {
     font-family:'open sans',arial,sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
+    background:#dfe6e9;
 }
-
-.user {
-    display:block;
-    margin:8px;
-}
-.user div {
-    display:inline-block;
-    width:10%;
+#appContainer {
+    height:100%;
 }
