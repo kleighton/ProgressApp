@@ -1,12 +1,12 @@
-import {expect} from 'chai';
-import jsdom from 'jsdom';
-import fs from 'fs';
+// import {expect} from 'chai';
+// import jsdom from 'jsdom';
+// import fs from 'fs';
 
-describe('Our first test', () => {
-  it('should pass', () => {
-    expect(true).to.equal(true);
-  });
-});
+// describe('Our first test', () => {
+//   it('should pass', () => {
+//     expect(true).to.equal(true);
+//   });
+// });
 
 // describe('index.html', () => {
 //   it('should have h1 that says Users', (done) => {
