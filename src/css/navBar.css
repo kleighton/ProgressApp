@@ -2,14 +2,16 @@
   height: 100%;
   background: #27b7d7;
   width:55px;
+  display:inline-block;
 }
 .navItem {
   color:#fff;
   text-align:center;
-  padding:16px 10px;
+  padding:18px 10px;
   cursor: pointer;
-  transition:.12s ease;
+  transition:.1s ease;
   position:relative;
+  height:25px;
 }
 .navItem:hover,
 .navItem.active {
@@ -30,4 +32,13 @@
   z-index:10;
   left:65px;
   top:calc(50% - 18px);
+}
+.navItemTool:after {
+  content:'';
+  position: absolute;
+  left: -7px;
+  top:12px;
+  border-right:7px solid rgba(0,0,0,.8);
+  border-top:7px solid transparent;
+  border-bottom:7px solid transparent;
 }

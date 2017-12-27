@@ -1,0 +1,14 @@
+.widget {
+  background:#fff;
+  border-radius:5px;
+  box-shadow: 0 0 4px #ccc;
+  display:inline-block;
+  margin:10px;
+}
+.widgetHeader {
+  padding:10px 15px;
+  border-bottom:1px solid #ddd;
+}
+.widgetContent {
+  padding:10px 15px;
+}
