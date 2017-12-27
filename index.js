@@ -9,7 +9,7 @@ app.use(cors());
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-  response.sendFile(path.join(__dirname,'../dist/index.html'));
+  response.sendFile(path.join(__dirname,'dist/index.html'));
 });
 
 app.get('/users', function(req, res) {
