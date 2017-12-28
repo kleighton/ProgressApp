@@ -2,12 +2,17 @@
 const navItems = [{
     path: '/',
     text: 'Dashboard',
-    icon: 'home'
+    icon: 'camera'
   },
   {
     path: '/users',
     text: 'Users',
     icon: 'person'
+  },
+  {
+    path: '/reports',
+    text: 'Reports',
+    icon: 'insert_chart'
   },
   {
     path: '/account',
