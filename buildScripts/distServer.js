@@ -14,13 +14,13 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
 app.get('/users',function(req,res){
-    res.sendFile(path.join(__dirname,'../src/index.html'));
+    res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
 app.get('/reports',function(req,res){
-    res.sendFile(path.join(__dirname,'../src/index.html'));
+    res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
 app.get('/account',function(req,res){
-    res.sendFile(path.join(__dirname,'../src/index.html'));
+    res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
 
 app.listen(port,function(err){
