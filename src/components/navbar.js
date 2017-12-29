@@ -1,21 +1,23 @@
+import layoutConstructor from './layoutConstructor';
+
 //NAV BAR COMPONENT
 const navItems = [{
-    path: '/',
+    path: '',
     text: 'Dashboard',
     icon: 'camera'
   },
   {
-    path: '/users',
+    path: '#users',
     text: 'Users',
     icon: 'person'
   },
   {
-    path: '/reports',
+    path: '#reports',
     text: 'Reports',
     icon: 'insert_chart'
   },
   {
-    path: '/account',
+    path: '#account',
     text: 'My Account',
     icon: 'settings'
   }
@@ -32,10 +34,20 @@ export default function NavBar() {
     navContainer.appendChild(navItem);
     navItem.addEventListener('click', function () {
       window.location = item.path;
+      layoutConstructor.renderContent(item.path);
     });
-    if (item.path == window.location.pathname){
+    if (item.path == window.location.hash){
       navItem.className = 'navItem active';
     }
+    window.addEventListener('hashchange',function(){
+      if (item.path == window.location.hash){
+        navItem.className = 'navItem active';
+      }
+      else {
+        navItem.className = 'navItem';
+      }
+    });
+    
   });
   appContainer.appendChild(navContainer);
 }

@@ -4,6 +4,7 @@
   box-shadow: 0 0 4px #ddd;
   display:inline-block;
   margin:10px;
+  vertical-align:top;
 }
 .widgetHeader {
   padding:10px 15px;
@@ -12,3 +13,49 @@
 .widgetContent {
   padding:10px 15px;
 }
+
+/* WIDGET WIDTH CLASSES */
+.width-25 {
+  width:calc(25% - 22px);
+}
+.width-30 {
+  width:calc(33.3333% - 22px);
+}
+.width-50 {
+  width:calc(50% - 22px);
+}
+.width-70 {
+  width:calc(66.6666% - 22px);
+}
+.width-100 {
+  width:calc(100% - 22px);
+}
+@media screen and (max-width:1200px){
+  .width-25 {
+    width:calc(33% - 22px);
+  }
+}
+@media screen and (max-width:900px){
+  .width-25 {
+    width:calc(50% - 22px);
+  }
+  .width-30 {
+    width:calc(50% - 22px);
+  }
+}
+@media screen and (max-width:700px){
+  .width-25 {
+    width:calc(100% - 22px);
+  }
+  .width-30 {
+    width:calc(100% - 22px);
+  }
+  .width-50 {
+    width:calc(100% - 22px);
+  }
+  .width-70 {
+    width:calc(100% - 22px);
+  }
+}
+
+

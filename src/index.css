@@ -8,6 +8,10 @@ body {
     height:100%;
     background:#dfe6e9;
 }
+p {
+    font-size:15px;
+}
+
 #appContainer {
     height:100%;
 }
@@ -15,6 +19,7 @@ body {
     width:calc(100% - 75px);
     height:calc(100% - 80px);
     margin-top:60px;
+    margin-left:55px;
     vertical-align: top;
     display:inline-block;
     padding:10px;

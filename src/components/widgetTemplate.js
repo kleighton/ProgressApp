@@ -1,5 +1,5 @@
 //WIDGET TEMPLATE COMPONENT
-export default function widgetTemplate(title){
+export default function widgetTemplate(title,width){
   var widget = document.createElement('div');
   var widgetHeader = document.createElement('div');
   var widgetHeaderTitle = document.createElement('div');
@@ -18,6 +18,9 @@ export default function widgetTemplate(title){
   widgetHeader.appendChild(widgetHeaderTitle);
   widget.appendChild(widgetHeader);
   widget.appendChild(widgetContent);
+  if (width != null){
+    widget.className = 'widget width-'+width;
+  }
   return {
     appendContent:appendContent,
     appendWidget:appendWidget
