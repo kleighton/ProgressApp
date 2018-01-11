@@ -11,9 +11,12 @@ function layoutConstructor(){
   const pageContent = document.createElement('div');
   pageContent.className = 'pageContent';
   appContainer.appendChild(pageContent);
+
+  header.renderHeaderAccount('Demo Account');
+
   function renderContent(path){
     pageContent.innerHTML = '';
-    if (path == ''){
+    if (path == '' || path == '#dashboard'){
       renderDashboardWidgets();
       header.renderHeaderTitle('Dashboard');
     }

@@ -23,6 +23,7 @@
   "author": "Kyle Leighton",
   "license": "MIT",
   "dependencies": {
+    "serve-favicon": "^2.4.5",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {

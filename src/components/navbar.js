@@ -2,7 +2,7 @@ import layoutConstructor from './layoutConstructor';
 
 //NAV BAR COMPONENT
 const navItems = [{
-    path: '',
+    path: '#dashboard',
     text: 'Dashboard',
     icon: 'camera'
   },
@@ -34,10 +34,15 @@ export default function NavBar() {
     navContainer.appendChild(navItem);
     navItem.addEventListener('click', function () {
       window.location = item.path;
+      document.title = item.text;
       layoutConstructor.renderContent(item.path);
     });
     if (item.path == window.location.hash){
       navItem.className = 'navItem active';
+    }
+    if (item.path == '#dashboard' && window.location.hash == ''){
+      navItem.className = 'navItem active';
+      document.title = item.text;
     }
     window.addEventListener('hashchange',function(){
       if (item.path == window.location.hash){
