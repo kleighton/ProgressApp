@@ -34,7 +34,7 @@ export default function NavBar() {
     navContainer.appendChild(navItem);
     navItem.addEventListener('click', function () {
       window.location = item.path;
-      document.title = item.text;
+      document.title = item.text + ' | ProgressHub';
       layoutConstructor.renderContent(item.path);
     });
     if (item.path == window.location.hash){
@@ -42,11 +42,12 @@ export default function NavBar() {
     }
     if (item.path == '#dashboard' && window.location.hash == ''){
       navItem.className = 'navItem active';
-      document.title = item.text;
+      document.title = item.text + ' | ProgressHub';
     }
     window.addEventListener('hashchange',function(){
       if (item.path == window.location.hash){
         navItem.className = 'navItem active';
+        layoutConstructor.renderContent(item.path);
       }
       else {
         navItem.className = 'navItem';

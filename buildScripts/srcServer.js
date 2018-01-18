@@ -5,7 +5,6 @@ import webpack from 'webpack';
 import config from '../webpack.config.dev';
 import favicon from 'serve-favicon';
 
-
 /*eslint-disable no-console*/
 
 const port = 5000;
