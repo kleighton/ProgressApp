@@ -6,6 +6,7 @@
   padding:19px 22px;
   background:#fff;
   box-shadow: 0 0 4px #ccc;
+  z-index:10;
 }
 .headerTitle {
   font-weight:600;

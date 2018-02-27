@@ -1,15 +1,20 @@
 //WIDGET TEMPLATE COMPONENT
-export default function widgetTemplate(title,width){
+export default function widgetTemplate(title,width,id){
   var widget = document.createElement('div');
   var widgetHeader = document.createElement('div');
   var widgetHeaderTitle = document.createElement('div');
   var widgetContent = document.createElement('div');
+  if (id){
+    widgetContent.setAttribute('id',id);
+  };
+
   var appendContent = function(content){
     widgetContent.appendChild(content);
   };
   var appendWidget = function(container){
     container.appendChild(widget);
   };
+
   widget.className = 'widget';
   widgetHeader.className = 'widgetHeader';
   widgetHeaderTitle.className = 'widgetHeaderTitle';
@@ -23,6 +28,7 @@ export default function widgetTemplate(title,width){
   }
   return {
     appendContent:appendContent,
-    appendWidget:appendWidget
+    appendWidget:appendWidget,
+    widgetContent: widgetContent
   }
 }

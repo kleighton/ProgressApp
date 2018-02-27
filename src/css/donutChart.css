@@ -1,0 +1,19 @@
+.donutContainer {
+  text-align: center;
+  position:relative;
+  display:inline-block;
+  margin:0 20px;
+}
+.donutTitle {
+  position: relative;
+  top:165px;
+}
+.donutText {
+  position: relative;
+  top:-94px;
+  font-size:bold;
+}
+.donutContainer .donutText span {
+  font-size:15px;
+  color:#777;
+}
