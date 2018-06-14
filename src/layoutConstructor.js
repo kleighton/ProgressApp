@@ -1,7 +1,7 @@
-import NavBar from './navbar';
-import Header from './header';
-import renderDashboardWidgets from './dashboardWidgets';
-import renderUserWidgets from './usersWidgets';
+import NavBar from './components/navbar';
+import Header from './components/header';
+import renderDashboardWidgets from './pageInits/dashboardWidgets';
+import renderUserWidgets from './pageInits/usersWidgets';
 
 //LAYOUT CONSTRUCTOR
 function layoutConstructor(){

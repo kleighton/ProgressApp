@@ -1,4 +1,4 @@
-import layoutConstructor from './layoutConstructor';
+import layoutConstructor from '../layoutConstructor';
 
 //NAV BAR COMPONENT
 const navItems = [{

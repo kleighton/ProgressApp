@@ -1,4 +1,4 @@
-import widgetTemplate from './widgetTemplate';
+import widgetTemplate from '../components/widgetTemplate';
 
 export default function renderUserWidgets(){
   var pageContainer = document.getElementsByClassName('pageContent')[0];
