@@ -15,18 +15,18 @@ function layoutConstructor(){
 
   function renderContent(path){
     pageContent.innerHTML = '';
-    if (path == '' || path == '#dashboard'){
+    if (path == '' || path == '/dashboard'){
       renderDashboardWidgets();
       header.renderHeaderTitle('Dashboard');
     }
-    else if (path == '#users'){
+    else if (path == '/users'){
       renderUserWidgets();
       header.renderHeaderTitle('Users');
     }
-    else if (path == '#reports'){
+    else if (path == '/reports'){
       header.renderHeaderTitle('Reports');
     }
-    else if (path == '#account'){
+    else if (path == '/account'){
       header.renderHeaderTitle('My Account');
     }
   }
