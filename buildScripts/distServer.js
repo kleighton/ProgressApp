@@ -17,6 +17,9 @@ app.use(favicon(path.join(__dirname , '../src/img/favicon.png')));
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
+app.get('/dashboard',function(req,res){
+    res.sendFile(path.join(__dirname,'../dist/index.html'));
+});
 app.get('/users',function(req,res){
     res.sendFile(path.join(__dirname,'../dist/index.html'));
 });

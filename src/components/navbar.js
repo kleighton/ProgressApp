@@ -3,6 +3,8 @@ import createHistory from 'history/createBrowserHistory';
 
 const history = createHistory();
 const location = history.location;
+console.log(location.pathname);
+
 
 //NAV BAR COMPONENT
 const navItems = [{
@@ -42,17 +44,15 @@ export default function NavBar() {
       document.title = item.text + ' | ProgressHub';
       layoutConstructor.renderContent(item.path);
     });
-    if (item.path == window.location.hash){
+    if (item.path == window.location.pathname){
       navItem.className = 'navItem active';
     }
-    if (item.path == '/dashboard' && window.location.hash == ''){
+    if (item.path == '/dashboard' && window.location.pathname == '/'){
       navItem.className = 'navItem active';
       document.title = item.text + ' | ProgressHub';
     }
     history.listen(function(location, action){
       if (item.path == location.pathname){
-        console.log(location.pathname);
-      console.log(item.path);
         navItem.className = 'navItem active';
         layoutConstructor.renderContent(item.path);
       }
