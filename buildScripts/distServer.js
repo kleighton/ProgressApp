@@ -33,3 +33,9 @@ app.listen(port,function(err){
         open('http://localhost:' + port);
     }
 });
+
+//Hits the heroku server to keep app awake
+setInterval(function() {
+    https.get("https://progressapp.herokuapp.com");
+    console.log('reload');
+}, 600000); 
