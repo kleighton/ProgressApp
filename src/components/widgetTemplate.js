@@ -6,7 +6,7 @@ export default function widgetTemplate(title,width,id){
   var widgetContent = document.createElement('div');
   if (id){
     widgetContent.setAttribute('id',id);
-  };
+  }
 
   var appendContent = function(content){
     widgetContent.appendChild(content);

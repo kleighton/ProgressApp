@@ -1,21 +1,22 @@
 .headerContainer {
   position: fixed;
   top:0;
-  width:calc(100% - 99px);
-  margin-left:55px;
-  padding:19px 22px;
+  width:calc(100% - 95px);
+  margin-left:50px;
+  padding:16px 22px;
   background:#fff;
-  box-shadow: 0 0 4px #ccc;
+  box-shadow: 0 0 3px #e7e7e7;
   z-index:10;
 }
 .headerTitle {
+  font-size:15px;
   font-weight:600;
   color:#555;
   display:inline-block;
 }
 .headerAccount {
   float:right;
-  font-size:15px;
+  font-size:14px;
   vertical-align: top;
   color:#888;
   cursor:pointer;

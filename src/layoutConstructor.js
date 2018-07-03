@@ -3,10 +3,9 @@ import Header from './components/header';
 import renderDashboardWidgets from './pageInits/dashboardWidgets';
 import renderUserWidgets from './pageInits/usersWidgets';
 
-//LAYOUT CONSTRUCTOR
-function layoutConstructor(){
+function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
-  const navBar = new NavBar();
+  new NavBar();
   const header = new Header();
   const pageContent = document.createElement('div');
   pageContent.className = 'pageContent';
@@ -30,12 +29,12 @@ function layoutConstructor(){
     else if (path == '#account'){
       header.renderHeaderTitle('My Account');
     }
-  };
+  }
   return {
     renderContent:renderContent
   };
-};
-const initialLayout = layoutConstructor();
-initialLayout.renderContent(window.location.hash);
+}
+const layout = layoutConstructor();
+layout.renderContent(window.location.hash);
 
-export default initialLayout;
+export default layout;
