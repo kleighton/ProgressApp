@@ -40,6 +40,6 @@ app.listen(port,function(err){
 
 //Hits the heroku server to keep app awake
 setInterval(function() {
-    https.get("https://progressapp.herokuapp.com");
+    https.get("https://progresshub.herokuapp.com");
     console.log('reload');
 }, 600000); 
