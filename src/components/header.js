@@ -19,8 +19,22 @@ export default function Header() {
   function renderHeaderAccount(account){
     headerAccount.innerHTML = account + '<i class="material-icons">account_circle</i>';
   }
+  function renderTaskBtn(txt){
+    var btn = document.createElement('div');
+    btn.className = 'c-primary-btn';
+    btn.innerHTML = txt;
+    headerAccount.appendChild(btn);
+  }
+  function renderSubTaskBtn(txt){
+    var btn = document.createElement('div');
+    btn.className = 'c-secondary-btn';
+    btn.innerHTML = txt;
+    headerAccount.appendChild(btn);
+  }
   return {
     renderHeaderTitle:renderHeaderTitle,
-    renderHeaderAccount:renderHeaderAccount
+    renderHeaderAccount:renderHeaderAccount,
+    renderTaskBtn:renderTaskBtn,
+    renderSubTaskBtn: renderSubTaskBtn
   }
 }

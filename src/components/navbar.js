@@ -1,4 +1,4 @@
-import layoutConstructor from '../layoutConstructor';
+import layoutConstructor from '../core/layoutConstructor';
 import createHistory from 'history/createBrowserHistory';
 
 const history = createHistory();

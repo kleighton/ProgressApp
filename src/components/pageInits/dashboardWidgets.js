@@ -1,4 +1,4 @@
-import widgetTemplate from '../components/widgetTemplate';
+import widgetTemplate from '../widgetTemplate';
 
 export default function renderDashboardWidgets(){
   var pageContainer = document.getElementsByClassName('pageContent')[0];

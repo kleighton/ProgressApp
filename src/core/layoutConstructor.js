@@ -1,7 +1,7 @@
-import NavBar from './components/navbar';
-import Header from './components/header';
-import renderDashboardWidgets from './pageInits/dashboardWidgets';
-import renderUserWidgets from './pageInits/usersWidgets';
+import NavBar from '../components/navbar';
+import Header from '../components/header';
+import renderDashboardWidgets from '../components/pageInits/dashboardWidgets';
+import renderUserWidgets from '../components/pageInits/usersWidgets';
 
 function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
@@ -11,7 +11,9 @@ function layoutConstructor(){
   pageContent.className = 'pageContent';
   appContainer.appendChild(pageContent);
 
-  header.renderHeaderAccount('Demo Account');
+  //header.renderHeaderAccount('Demo Account');
+  header.renderSubTaskBtn('Cancel');
+  header.renderTaskBtn('Add Task');
 
   function renderContent(path){
     pageContent.innerHTML = '';

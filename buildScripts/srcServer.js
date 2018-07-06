@@ -11,7 +11,7 @@ const port = 5000;
 const app = express();
 const compiler = webpack(config);
 
-app.use(favicon(path.join(__dirname , '../src/img/favicon.png')));
+app.use(favicon(path.join(__dirname , '../src/assets/favicon.png')));
 
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,

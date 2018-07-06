@@ -7,7 +7,7 @@ export default {
   devtool: 'inline-source-map',
   noInfo: false,
   entry: [
-    path.resolve(__dirname, 'src/index')
+    path.resolve(__dirname, 'src/core/index')
   ],
   target: 'web',
   output: {
@@ -18,7 +18,7 @@ export default {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/core/index.html',
       inject: true
     })
   ],
