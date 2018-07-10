@@ -18,13 +18,13 @@
   &-secondary-btn {
     padding: 5px 15px;
     background:transparent;
-    border:1px solid $blue1;
+    border:1px solid $grey4;
     border-radius:6px;
     color:white;
     position:absolute;
     right: 120px;
     top: 12px;
-    color:$blue1;
+    color:$grey-3;
     &:hover {
       background:darken($blue1,7);
       border:1px solid darken($blue1,7);

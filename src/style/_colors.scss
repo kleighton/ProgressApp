@@ -1,3 +1,29 @@
-$blue1: #27b7d7;
 
+// blue
+$blue: #27b7d7;
+
+$blue1: lighten($blue,5);
+$blue2: lighten($blue,10);
+$blue3: lighten($blue,15);
+$blue4: lighten($blue,20);
+
+$blue-1: darken($blue,5);
+$blue-2: darken($blue,10);
+$blue-3: darken($blue,15);
+$blue-4: darken($blue,20);
+
+// grey
+$grey: #888;
+
+$grey1: lighten($grey,5);
+$grey2: lighten($grey,10);
+$grey3: lighten($grey,15);
+$grey4: lighten($grey,20);
+
+$grey-1: darken($grey,5);
+$grey-2: darken($grey,10);
+$grey-3: darken($grey,15);
+$grey-4: darken($grey,20);
+
+// green
 $green1: #00cc00;

@@ -17,21 +17,22 @@ app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
 }));
+app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/core/index.html'));
 });
 app.get('/dashboard', function (req, res) {
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/core/index.html'));
 });
 app.get('/users', function (req, res) {
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/core/index.html'));
 });
 app.get('/reports', function (req, res) {
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/core/index.html'));
 });
 app.get('/account', function (req, res) {
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/core/index.html'));
 });
 app.get('/signup', function (req, res) {
     res.sendFile(path.join(__dirname, '../src/signup.html'));

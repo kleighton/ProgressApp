@@ -1,7 +1,11 @@
 import NavBar from '../components/navbar';
 import Header from '../components/header';
-import renderDashboardWidgets from '../components/pageInits/dashboardWidgets';
-import renderUserWidgets from '../components/pageInits/usersWidgets';
+import dashboard from '../modules/dashboard';
+import users from '../modules/users';
+import createHistory from 'history/createBrowserHistory';
+
+const history = createHistory();
+const location = history.location;
 
 function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
@@ -11,18 +15,17 @@ function layoutConstructor(){
   pageContent.className = 'pageContent';
   appContainer.appendChild(pageContent);
 
-  //header.renderHeaderAccount('Demo Account');
   header.renderSubTaskBtn('Cancel');
   header.renderTaskBtn('Add Task');
 
   function renderContent(path){
     pageContent.innerHTML = '';
-    if (path == '' || path == '/dashboard'){
-      renderDashboardWidgets();
+    if (path == '/' || path == '/dashboard'){
+      dashboard();
       header.renderHeaderTitle('Dashboard');
     }
     else if (path == '/users'){
-      renderUserWidgets();
+      users();
       header.renderHeaderTitle('Users');
     }
     else if (path == '/reports'){
@@ -37,6 +40,7 @@ function layoutConstructor(){
   };
 }
 const layout = layoutConstructor();
-layout.renderContent(window.location.hash);
+console.log(location.pathname);
+layout.renderContent(location.pathname);
 
 export default layout;

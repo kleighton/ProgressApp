@@ -1,6 +1,6 @@
-import widgetTemplate from '../widgetTemplate';
+import widgetTemplate from '../components/widgetTemplate';
 
-export default function renderUserWidgets(){
+function users(){
   var pageContainer = document.getElementsByClassName('pageContent')[0];
   
   var numOfUsers = 50;
@@ -12,3 +12,5 @@ export default function renderUserWidgets(){
     widget.appendWidget(pageContainer);
   }
 }
+
+module.exports = users;
