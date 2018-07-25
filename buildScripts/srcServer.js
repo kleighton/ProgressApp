@@ -3,6 +3,7 @@ import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
+import middleware from 'webpack-dev-middleware';
 import favicon from 'serve-favicon';
 
 /*eslint-disable no-console*/
@@ -13,10 +14,9 @@ const compiler = webpack(config);
 
 app.use(favicon(path.join(__dirname , '../src/assets/favicon.png')));
 
-app.use(require('webpack-dev-middleware')(compiler, {
-    noInfo: true,
+app.use(middleware)(compiler, {
     publicPath: config.output.publicPath
-}));
+});
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {

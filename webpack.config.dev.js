@@ -3,12 +3,12 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 
 export default {
-  debug: true,
+  mode: 'production',
   devtool: 'inline-source-map',
-  noInfo: false,
-  entry: [
-    path.resolve(__dirname, 'src/core/index')
-  ],
+  entry: {
+    vendor: path.resolve(__dirname, 'src/vendor/vendor'),
+    main: path.resolve(__dirname, 'src/core/index')
+  },
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'src'),
@@ -23,10 +23,10 @@ export default {
     })
   ],
   module: {
-    loaders: [{
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel']
+        loaders: ['babel-loader']
       },
       {
         test: /\.css$/,

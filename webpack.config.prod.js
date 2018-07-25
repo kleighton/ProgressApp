@@ -5,11 +5,10 @@ import WebpackMd5Hash from 'webpack-md5-hash';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
-  debug: true,
+  mode: 'production',
   devtool: 'source-map',
-  noInfo: false,
   entry: {
-    vendor: path.resolve(__dirname, 'src/core/vendor'),
+    vendor: path.resolve(__dirname, 'src/vendor/vendor'),
     main: path.resolve(__dirname, 'src/core/index')
   },
   target: 'web',
@@ -18,17 +17,23 @@ export default {
     publicPath: '/',
     filename: '[name].[chunkhash].js'
   },
+  optimization: {
+    minimize: true,
+    splitChunks: {
+        cacheGroups: {
+            commons: {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendor',
+                chunks: 'all'
+            }
+        }
+    }
+},
   plugins: [
-    // Generate an external css file with a hash in the filename
     new ExtractTextPlugin('[name].[contenthash].css'),
     // Hash the files using MD5 so that their names changes when the content changes.
     new WebpackMd5Hash(),
 
-    // Use CommonsChunkPlugin to create a separte bundle
-    // of vendor libraries so that they're cached separately.
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
-    }),
     // Create HTML file that includes refereence to bundled JS.
     new HtmlWebpackPlugin({
       template: 'src/core/index.html',
@@ -47,16 +52,14 @@ export default {
       inject: true
     }),
     //Eliminate duplicate packages when generating bundle
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
 
-    //Minify JS
-    new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
-    loaders: [{
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel']
+        loaders: ['babel-loader']
       },
       {
         test: /\.css$/,
