@@ -10,7 +10,7 @@ function dashboard(){
   var content1 = document.createElement('p');
   var content2 = document.createElement('p');
   var content3 = document.createElement('p');
-  content1.innerHTML = 'Here is some test content for each of the widgets on the dashboard test.';
+  content1.innerHTML = 'Here is some test content for each of the widgets on the dashboard.';
   content2.innerHTML = 'Here is some test content for each of the widgets on the dashboard.';
   content3.innerHTML = 'Here is some test content for each of the widgets on the dashboard.';
   widgetOne.appendContent(content1);
