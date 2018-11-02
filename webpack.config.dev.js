@@ -3,20 +3,19 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 
 export default {
-  mode: 'production',
-  devtool: 'inline-source-map',
+  mode: 'development',
+  devtool: 'source-map',
   entry: {
     vendor: path.resolve(__dirname, 'src/vendor/vendor'),
     main: path.resolve(__dirname, 'src/core/index')
   },
   target: 'web',
   output: {
-    path: path.resolve(__dirname, 'src'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: '[name].bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/core/index.html',
       inject: true

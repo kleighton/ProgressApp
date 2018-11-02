@@ -9,7 +9,7 @@ const location = history.location;
 
 function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
-  new NavBar();
+  new NavBar(2);
   const header = new Header();
   const pageContent = document.createElement('div');
   pageContent.className = 'pageContent';

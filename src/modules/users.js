@@ -1,4 +1,5 @@
 import widgetTemplate from '../components/widgetTemplate';
+import lineItem from '../components/lineItem';
 
 function users(){
   var pageContainer = document.getElementsByClassName('pageContent')[0];
