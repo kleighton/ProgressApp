@@ -30,13 +30,13 @@ app.get('/account',function(req,res){
     res.sendFile(path.join(__dirname,'../dist/index.html'));
 });
 
-// app.listen(port,function(err){
-//     if (err){
-//         console.log(err);
-//     } else {
-//         open('http://localhost:' + port);
-//     }
-// });
+app.listen(port,function(err){
+    if (err){
+        console.log(err);
+    } else {
+        open('http://localhost:' + port);
+    }
+});
 
 //Hits the heroku server to keep app awake
 setInterval(function() {
