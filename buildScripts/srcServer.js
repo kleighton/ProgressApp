@@ -9,6 +9,8 @@ import favicon from 'serve-favicon';
 
 const port = 3000;
 const app = express();
+app.use(express.static('dist'));
+
 webpack(config).run((err, stats) => {
     if (err) {
       console.log(chalk.red(err));
@@ -17,7 +19,6 @@ webpack(config).run((err, stats) => {
     return 0;
   });
 
-  app.use(express.static('dist'));
   app.use(favicon(path.join(__dirname , '../src/assets/favicon.png')));
   
   app.get('/',function(req,res){
