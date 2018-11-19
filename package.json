@@ -1,6 +1,6 @@
 {
   "name": "progress-webapp",
-  "version": "1.0.0",
+  "version":  "1.0.0",
   "description": "Progress Web Application",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js clean-dist",
