@@ -27,6 +27,10 @@
   "author": "Kyle Leighton",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "6.17.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "6.16.3",
     "babel-loader": "^7.1.4",
     "history": "^4.7.2",
     "serve-favicon": "^2.4.5",
@@ -35,10 +39,6 @@
     "rimraf": "2.5.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "6.17.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "6.16.3",
     "chai": "3.5.0",
     "chalk": "1.1.3",
     "cheerio": "0.22.0",
