@@ -2,6 +2,10 @@
   "name": "progress-webapp",
   "version":  "1.0.0",
   "description": "Progress Web Application",
+  "engines": {
+    "node": "6.11.3",
+    "npm": "6.1.0"
+  },
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js clean-dist",
     "start": "npm-run-all security-check open:src",
