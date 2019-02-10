@@ -12,7 +12,7 @@ const app = express();
 app.use(express.static('dist'));
 app.use(express.static('src/assets'));
 
-webpack(config).run((err, stats) => {
+webpack(config).run((err) => {
     if (err) {
       console.log(err);
       return 1;
