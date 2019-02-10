@@ -1,6 +1,6 @@
 import widgetTemplate from '../components/widgetTemplate';
 
-function dashboard(){
+var dashboard = function(){
   var pageContainer = document.getElementsByClassName('pageContent')[0];
 
   var widgetOne = new widgetTemplate('Status',50, pageContainer, 'widgetOne');

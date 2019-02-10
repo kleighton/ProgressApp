@@ -1,31 +1,67 @@
 .headerContainer {
   position: fixed;
-  top:0;
-  width:calc(100% - 95px);
-  margin-left:50px;
-  padding:16px 22px;
-  background:#fff;
+  top: 0;
+  width: calc(100% - 224px);
+  margin-left: 180px;
+  padding: 16px 22px;
+  background: #fff;
   box-shadow: 0 0 3px #e7e7e7;
-  z-index:9;
+  z-index: 9;
 }
+
 .headerTitle {
-  font-size:15px;
-  font-weight:600;
-  color:#555;
-  display:inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  display: inline-block;
 }
+
 .headerAccount {
-  float:right;
-  font-size:14px;
+  float: right;
+  font-size: 14px;
   vertical-align: top;
-  color:#888;
-  cursor:pointer;
+  color: #888;
+  cursor: pointer;
+
+  &:hover .headerProfileDropdown {
+    background: #27b7d7;
+
+    i {
+      color: #fff;
+    }
+  }
+
+  &:hover .headerUserName {
+    color: #333;
+  }
 }
-.headerAccount i {
-  font-size:20px;
-  float:right;
-  color:#888;
-  margin-left:7px;
-  position: relative;
-  top:1px;
+
+.headerUserName {
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+    position: absolute;
+    padding: 10px 55px;
+    right: 22px;
+    top: 7px;
+
+}
+
+.headerProfileDropdown {
+  padding: 5px;
+  border: 2px solid #27b7d7;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+
+  &>i {
+    font-size: 20px;
+    float: right;
+    color: #888;
+    margin-left: 7px;
+    position: relative;
+  }
 }

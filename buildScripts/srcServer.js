@@ -10,10 +10,11 @@ import favicon from 'serve-favicon';
 const port = 3000;
 const app = express();
 app.use(express.static('dist'));
+app.use(express.static('src/assets'));
 
 webpack(config).run((err, stats) => {
     if (err) {
-      console.log(chalk.red(err));
+      console.log(err);
       return 1;
     }
     return 0;
@@ -27,13 +28,13 @@ webpack(config).run((err, stats) => {
   app.get('/dashboard',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
-  app.get('/users',function(req,res){
+  app.get('/organizations',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
-  app.get('/reports',function(req,res){
+  app.get('/fundraisers',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
-  app.get('/account',function(req,res){
+  app.get('/people',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
 

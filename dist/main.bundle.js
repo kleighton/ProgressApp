@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  font-family: 'open sans',arial,sans-serif;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background: #f0f4f7; }\n\np {\n  font-size: 15px;\n  color: #818d9a; }\n\n#appContainer {\n  height: 100%; }\n\n.pageContent {\n  width: calc(100% - 75px);\n  height: calc(100% - 80px);\n  margin-top: 60px;\n  margin-left: 50px;\n  vertical-align: top;\n  display: inline-block;\n  padding: 10px; }\n\n.c-primary-btn {\n  padding: 5px 15px;\n  background: #00cc00;\n  border: 1px solid #00cc00;\n  border-radius: 6px;\n  color: white;\n  position: absolute;\n  right: 20px;\n  top: 12px; }\n  .c-primary-btn:hover {\n    background: #00a800;\n    border: 1px solid #00a800; }\n\n.c-secondary-btn {\n  padding: 5px 15px;\n  background: transparent;\n  border: 1px solid #bbbbbb;\n  border-radius: 6px;\n  color: white;\n  position: absolute;\n  right: 120px;\n  top: 12px;\n  color: #626262; }\n  .c-secondary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce;\n    color: white; }\n\n.navContainer {\n  height: 100%;\n  background: #27b7d7;\n  width: 50px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.navItem {\n  color: #fff;\n  text-align: center;\n  padding: 15px 10px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px; }\n\n.navItem:hover,\n.navItem.active {\n  background: #0797b7; }\n\n.navItem:hover .navItemTool {\n  display: block; }\n\n.navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.nav2.navContainer {\n  height: 100%;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  width: 50px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.nav2 .navItem {\n  color: #27b7d7;\n  text-align: center;\n  padding: 15px 6px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px;\n  border-left: 4px solid transparent;\n  border-right: 2px solid transparent; }\n  .nav2 .navItem i {\n    opacity: .6; }\n\n.nav2 .navItem:hover,\n.nav2 .navItem.active {\n  background: #fff;\n  border-left: 4px solid #27b7d7; }\n  .nav2 .navItem:hover i,\n  .nav2 .navItem.active i {\n    opacity: 1; }\n\n.nav2 .navItem:hover .navItemTool {\n  display: block; }\n\n.nav2 .navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.nav2 .navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.headerContainer {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 95px);\n  margin-left: 50px;\n  padding: 16px 22px;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  z-index: 9; }\n\n.headerTitle {\n  font-size: 15px;\n  font-weight: 600;\n  color: #555;\n  display: inline-block; }\n\n.headerAccount {\n  float: right;\n  font-size: 14px;\n  vertical-align: top;\n  color: #888;\n  cursor: pointer; }\n\n.headerAccount i {\n  font-size: 20px;\n  float: right;\n  color: #888;\n  margin-left: 7px;\n  position: relative;\n  top: 1px; }\n\n.widget {\n  background: #fff;\n  border-radius: 5px;\n  box-shadow: 0 0 4px #ddd;\n  display: inline-block;\n  margin: 10px;\n  vertical-align: top; }\n\n.widgetHeader {\n  padding: 10px 15px;\n  border-bottom: 1px solid #ddd;\n  font-size: 15px; }\n\n.widgetContent {\n  padding: 10px 15px; }\n\n/* WIDGET WIDTH CLASSES */\n.width-25 {\n  width: calc(25% - 22px); }\n\n.width-30 {\n  width: calc(33.3333% - 22px); }\n\n.width-50 {\n  width: calc(50% - 22px); }\n\n.width-70 {\n  width: calc(66.6666% - 22px); }\n\n.width-100 {\n  width: calc(100% - 22px); }\n\n@media screen and (max-width: 1200px) {\n  .width-25 {\n    width: calc(33% - 22px); } }\n\n@media screen and (max-width: 900px) {\n  .width-25 {\n    width: calc(50% - 22px); }\n  .width-30 {\n    width: calc(50% - 22px); } }\n\n@media screen and (max-width: 700px) {\n  .width-25 {\n    width: calc(100% - 22px); }\n  .width-30 {\n    width: calc(100% - 22px); }\n  .width-50 {\n    width: calc(100% - 22px); }\n  .width-70 {\n    width: calc(100% - 22px); } }\n", ""]);
+exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  font-family: 'open sans',arial,sans-serif;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background: #f0f4f7; }\n\np {\n  font-size: 15px;\n  color: #818d9a; }\n\n#appContainer {\n  height: 100%; }\n\n.pageContent {\n  width: calc(100% - 200px);\n  height: calc(100% - 80px);\n  margin-top: 60px;\n  margin-left: 180px;\n  vertical-align: top;\n  display: inline-block;\n  padding: 10px; }\n\n.c-primary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: #3cbfdc;\n  border: 1px solid #3cbfdc;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  display: inline;\n  cursor: pointer; }\n  .c-primary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce; }\n\n.c-secondary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: transparent;\n  border: 1px solid #bbbbbb;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  color: #626262;\n  display: inline; }\n  .c-secondary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce;\n    color: white; }\n\n.navContainer {\n  height: 100%;\n  background: #27b7d7;\n  width: 180px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.navItem {\n  color: #fff;\n  text-align: left;\n  padding: 15px 18px 15px 22px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px; }\n\n.navItem:hover,\n.navItem.active {\n  background: #0797b7; }\n\n.navItem:hover .navItemTool {\n  display: block; }\n\n.navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.navItem > i {\n  vertical-align: bottom;\n  margin-right: 10px; }\n\n.nav2.navContainer {\n  height: 100%;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  width: 50px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.nav2 .navItem {\n  color: #27b7d7;\n  text-align: center;\n  padding: 15px 6px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px;\n  border-left: 4px solid transparent;\n  border-right: 2px solid transparent; }\n  .nav2 .navItem i {\n    opacity: .6; }\n\n.nav2 .navItem:hover,\n.nav2 .navItem.active {\n  background: #fff;\n  border-left: 4px solid #27b7d7; }\n  .nav2 .navItem:hover i,\n  .nav2 .navItem.active i {\n    opacity: 1; }\n\n.nav2 .navItem:hover .navItemTool {\n  display: block; }\n\n.nav2 .navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.nav2 .navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.headerContainer {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 224px);\n  margin-left: 180px;\n  padding: 16px 22px;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  z-index: 9; }\n\n.headerTitle {\n  font-size: 15px;\n  font-weight: 600;\n  color: #555;\n  display: inline-block; }\n\n.headerAccount {\n  float: right;\n  font-size: 14px;\n  vertical-align: top;\n  color: #888;\n  cursor: pointer; }\n  .headerAccount:hover .headerProfileDropdown {\n    background: #27b7d7; }\n    .headerAccount:hover .headerProfileDropdown i {\n      color: #fff; }\n  .headerAccount:hover .headerUserName {\n    color: #333; }\n\n.headerUserName {\n  font-size: 15px;\n  font-weight: 500;\n  color: #888;\n  position: absolute;\n  padding: 10px 55px;\n  right: 22px;\n  top: 7px; }\n\n.headerProfileDropdown {\n  padding: 5px;\n  border: 2px solid #27b7d7;\n  border-radius: 50%;\n  width: 20px;\n  height: 20px;\n  position: absolute;\n  right: 25px;\n  top: 10px; }\n  .headerProfileDropdown > i {\n    font-size: 20px;\n    float: right;\n    color: #888;\n    margin-left: 7px;\n    position: relative; }\n\n.widget {\n  background: #fff;\n  border-radius: 5px;\n  box-shadow: 0 0 4px #ddd;\n  display: inline-block;\n  margin: 10px;\n  vertical-align: top; }\n\n.widgetHeader {\n  color: #777;\n  padding: 10px 15px;\n  border-bottom: 1px solid #ddd;\n  font-size: 15px;\n  font-weight: bold; }\n\n.widgetContent {\n  padding: 10px 15px; }\n\n/* WIDGET WIDTH CLASSES */\n.width-25 {\n  width: calc(25% - 22px); }\n\n.width-30 {\n  width: calc(33.3333% - 22px); }\n\n.width-50 {\n  width: calc(50% - 22px); }\n\n.width-70 {\n  width: calc(66.6666% - 22px); }\n\n.width-100 {\n  width: calc(100% - 22px); }\n\n@media screen and (max-width: 1200px) {\n  .width-25 {\n    width: calc(33% - 22px); } }\n\n@media screen and (max-width: 900px) {\n  .width-25 {\n    width: calc(50% - 22px); }\n  .width-30 {\n    width: calc(50% - 22px); } }\n\n@media screen and (max-width: 700px) {\n  .width-25 {\n    width: calc(100% - 22px); }\n  .width-30 {\n    width: calc(100% - 22px); }\n  .width-50 {\n    width: calc(100% - 22px); }\n  .width-70 {\n    width: calc(100% - 22px); } }\n", ""]);
 
 // exports
 
@@ -1343,78 +1343,67 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Header;
-//HEADER COMPONENT
+
+var _buttons = __webpack_require__(/*! ../utilities/buttons */ "./src/utilities/buttons.js");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function Header() {
   const appContainer = document.getElementById('appContainer');
   const headerContainer = document.createElement('div');
   const headerTitle = document.createElement('div');
   const headerAccount = document.createElement('div');
+  const headerProfile = document.createElement('div');
+  const headerProfileDropdown = document.createElement('div');
 
   headerContainer.className = 'headerContainer';
   headerTitle.className = 'headerTitle';
   headerAccount.className = 'headerAccount';
+  headerProfile.className = 'headerProfile';
+  headerProfileDropdown.className = 'headerProfileDropdown';
 
   headerContainer.appendChild(headerTitle);
   headerContainer.appendChild(headerAccount);
+  headerAccount.appendChild(headerProfile);
+  headerAccount.appendChild(headerProfileDropdown);
+
+  const addBtn = new _buttons2.default('');
+  headerContainer.appendChild(addBtn.btn);
+  addBtn.btn.style.display = 'none';
+
+  /* Render to DOM */
   appContainer.appendChild(headerContainer);
 
+  /* Methods */
   function renderHeaderTitle(title) {
     headerTitle.innerHTML = title;
+    if (title != 'Dashboard') {
+      addBtn.btn.style.display = 'inline';
+      addBtn.update('Add ' + title);
+    } else {
+      addBtn.btn.style.display = 'none';
+    }
   }
+
   function renderHeaderAccount(account) {
     headerAccount.innerHTML = account + '<i class="material-icons">account_circle</i>';
   }
-  function renderTaskBtn(txt) {
-    var btn = document.createElement('div');
-    btn.className = 'c-primary-btn';
-    btn.innerHTML = txt;
-    headerAccount.appendChild(btn);
-  }
-  function renderSubTaskBtn(txt) {
-    var btn = document.createElement('div');
-    btn.className = 'c-secondary-btn';
-    btn.innerHTML = txt;
-    headerAccount.appendChild(btn);
+
+  function renderHeaderProfile(user) {
+    const userName = document.createElement('div');
+    headerProfile.appendChild(userName);
+    userName.innerHTML = user;
+    userName.className = 'headerUserName';
+    headerProfileDropdown.innerHTML = '<i class="material-icons">person</i>';
   }
   return {
     renderHeaderTitle: renderHeaderTitle,
     renderHeaderAccount: renderHeaderAccount,
-    renderTaskBtn: renderTaskBtn,
-    renderSubTaskBtn: renderSubTaskBtn
+    renderHeaderProfile: renderHeaderProfile
   };
-}
-
-/***/ }),
-
-/***/ "./src/components/lineItem.js":
-/*!************************************!*\
-  !*** ./src/components/lineItem.js ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = listTemplate;
-//WIDGET TEMPLATE COMPONENT
-function listTemplate(container, id) {
-  var item = document.createElement('div');
-  if (id) {
-    widgetContent.setAttribute('id', id);
-  }
-
-  item.className = 'line-item';
-
-  if (container != null) {
-    appendWidget(container);
-  }
-
-  return {};
-}
+} /* Header Component*/
 
 /***/ }),
 
@@ -1452,16 +1441,16 @@ const navItems = [{
   text: 'Dashboard',
   icon: 'camera'
 }, {
-  path: '/users',
-  text: 'Users',
+  path: '/organizations',
+  text: 'Organizations',
   icon: 'person'
 }, {
-  path: '/reports',
-  text: 'Reports',
+  path: '/fundraisers',
+  text: 'Fundraisers',
   icon: 'insert_chart'
 }, {
-  path: '/account',
-  text: 'My Account',
+  path: '/people',
+  text: 'People',
   icon: 'settings'
 }];
 
@@ -1472,11 +1461,11 @@ function NavBar(style) {
     navContainer.className = 'navContainer';
   } else if (style === 2) {
     navContainer.className = 'nav2 navContainer';
-  };
+  }
   navItems.forEach(function (item) {
     const navItem = document.createElement('div');
     navItem.className = 'navItem';
-    navItem.innerHTML = '<i class="material-icons">' + item.icon + '</i><span class="navItemTool">' + item.text + '</span>';
+    navItem.innerHTML = '<i class="material-icons">' + item.icon + '</i>' + item.text;
     navContainer.appendChild(navItem);
     navItem.addEventListener('click', function () {
       history.push(item.path, { state: item.path });
@@ -1609,38 +1598,43 @@ var _users = __webpack_require__(/*! ../modules/users */ "./src/modules/users.js
 
 var _users2 = _interopRequireDefault(_users);
 
+var _fundraisers = __webpack_require__(/*! ../modules/fundraisers */ "./src/modules/fundraisers.js");
+
+var _fundraisers2 = _interopRequireDefault(_fundraisers);
+
 var _createBrowserHistory = __webpack_require__(/*! history/createBrowserHistory */ "./node_modules/history/createBrowserHistory.js");
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/* eslint-disable import/default */
 const history = (0, _createBrowserHistory2.default)();
 const location = history.location;
 
 function layoutConstructor() {
   const appContainer = document.getElementById('appContainer');
-  new _navbar2.default(2);
+  new _navbar2.default(1);
   const header = new _header2.default();
   const pageContent = document.createElement('div');
   pageContent.className = 'pageContent';
   appContainer.appendChild(pageContent);
 
-  header.renderSubTaskBtn('Cancel');
-  header.renderTaskBtn('Add Task');
+  header.renderHeaderProfile('Test User');
 
   function renderContent(path) {
     pageContent.innerHTML = '';
     if (path == '/' || path == '/dashboard') {
       (0, _dashboard2.default)();
       header.renderHeaderTitle('Dashboard');
-    } else if (path == '/users') {
+    } else if (path == '/organizations') {
+      header.renderHeaderTitle('Organizations');
+    } else if (path == '/fundraisers') {
+      (0, _fundraisers2.default)();
+      header.renderHeaderTitle('Fundraisers');
+    } else if (path == '/people') {
       (0, _users2.default)();
-      header.renderHeaderTitle('Users');
-    } else if (path == '/reports') {
-      header.renderHeaderTitle('Reports');
-    } else if (path == '/account') {
-      header.renderHeaderTitle('My Account');
+      header.renderHeaderTitle('People');
     }
   }
   return {
@@ -1648,7 +1642,6 @@ function layoutConstructor() {
   };
 }
 const layout = layoutConstructor();
-console.log(location.pathname);
 layout.renderContent(location.pathname);
 
 exports.default = layout;
@@ -1671,7 +1664,7 @@ var _widgetTemplate2 = _interopRequireDefault(_widgetTemplate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function dashboard() {
+var dashboard = function () {
   var pageContainer = document.getElementsByClassName('pageContent')[0];
 
   var widgetOne = new _widgetTemplate2.default('Status', 50, pageContainer, 'widgetOne');
@@ -1687,9 +1680,42 @@ function dashboard() {
   widgetOne.appendContent(content1);
   widgetTwo.appendContent(content2);
   widgetThree.appendContent(content3);
-}
+};
 
 module.exports = dashboard;
+
+/***/ }),
+
+/***/ "./src/modules/fundraisers.js":
+/*!************************************!*\
+  !*** ./src/modules/fundraisers.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _widgetTemplate = __webpack_require__(/*! ../components/widgetTemplate */ "./src/components/widgetTemplate.js");
+
+var _widgetTemplate2 = _interopRequireDefault(_widgetTemplate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var fundraisers = function () {
+  var pageContainer = document.getElementsByClassName('pageContent')[0];
+
+  var numOfUsers = 18;
+  for (var i = 0; i < numOfUsers; i++) {
+    var widget = new _widgetTemplate2.default('Test Fundraiser', 25);
+    var content = document.createElement('p');
+    content.innerHTML = 'Fundraiser widget content example.';
+    widget.appendContent(content);
+    widget.appendWidget(pageContainer);
+  }
+};
+
+module.exports = fundraisers;
 
 /***/ }),
 
@@ -1707,16 +1733,12 @@ var _widgetTemplate = __webpack_require__(/*! ../components/widgetTemplate */ ".
 
 var _widgetTemplate2 = _interopRequireDefault(_widgetTemplate);
 
-var _lineItem = __webpack_require__(/*! ../components/lineItem */ "./src/components/lineItem.js");
-
-var _lineItem2 = _interopRequireDefault(_lineItem);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function users() {
+var users = function () {
   var pageContainer = document.getElementsByClassName('pageContent')[0];
 
-  var numOfUsers = 50;
+  var numOfUsers = 15;
   for (var i = 0; i < numOfUsers; i++) {
     var widget = new _widgetTemplate2.default('Test User', 25);
     var content = document.createElement('p');
@@ -1724,7 +1746,7 @@ function users() {
     widget.appendContent(content);
     widget.appendWidget(pageContainer);
   }
-}
+};
 
 module.exports = users;
 
@@ -1747,6 +1769,47 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/addStyles.j
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/utilities/buttons.js":
+/*!**********************************!*\
+  !*** ./src/utilities/buttons.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+const PrimaryBtn = function (text, _callback) {
+    const btn = document.createElement('btn');
+    btn.setAttribute('type', 'button');
+    btn.className = 'c-primary-btn';
+    btn.innerHTML = text;
+    if (_callback) {
+        btn.addEventListener('click', function (e) {
+            _callback(e);
+        });
+    }
+
+    /* Methods */
+    function update(text, _callback) {
+        btn.removeEventListener('click', {});
+        btn.innerHTML = text;
+        if (_callback) {
+            btn.addEventListener('click', function (e) {
+                _callback(e);
+            });
+        }
+    }
+    return {
+        update: update,
+        btn: btn
+    };
+};
+
+module.exports = PrimaryBtn;
 
 /***/ })
 

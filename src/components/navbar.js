@@ -11,18 +11,18 @@ const navItems = [{
     icon: 'camera'
   },
   {
-    path: '/users',
-    text: 'Users',
+    path: '/organizations',
+    text: 'Organizations',
     icon: 'person'
   },
   {
-    path: '/reports',
-    text: 'Reports',
+    path: '/fundraisers',
+    text: 'Fundraisers',
     icon: 'insert_chart'
   },
   {
-    path: '/account',
-    text: 'My Account',
+    path: '/people',
+    text: 'People',
     icon: 'settings'
   }
 ];
@@ -34,11 +34,11 @@ export default function NavBar(style) {
     navContainer.className = 'navContainer';
   } else if (style === 2) {
     navContainer.className = 'nav2 navContainer';
-  };
+  }
   navItems.forEach(function (item) {
     const navItem = document.createElement('div');
     navItem.className = 'navItem';
-    navItem.innerHTML = '<i class="material-icons">'+item.icon+'</i><span class="navItemTool">'+item.text+'</span>';
+    navItem.innerHTML = '<i class="material-icons">'+item.icon+'</i>' + item.text;
     navContainer.appendChild(navItem);
     navItem.addEventListener('click', function () {
       history.push(item.path, {state: item.path});

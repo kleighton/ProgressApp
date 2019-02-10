@@ -1,16 +1,16 @@
 import widgetTemplate from '../components/widgetTemplate';
 
-var users = function(){
+var fundraisers = function (){
   var pageContainer = document.getElementsByClassName('pageContent')[0];
   
-  var numOfUsers = 15;
+  var numOfUsers = 18;
   for (var i=0;i < numOfUsers;i++){
-    var widget = new widgetTemplate('Test User',25);
+    var widget = new widgetTemplate('Test Fundraiser',25);
     var content = document.createElement('p');
-    content.innerHTML = 'User widget content example.';
+    content.innerHTML = 'Fundraiser widget content example.';
     widget.appendContent(content);
     widget.appendWidget(pageContainer);
   }
 }
 
-module.exports = users;
+module.exports = fundraisers;
