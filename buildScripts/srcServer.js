@@ -7,7 +7,7 @@ import favicon from 'serve-favicon';
 
 /*eslint-disable no-console*/
 
-const port = 3000;
+const port = 3001;
 const app = express();
 app.use(express.static('dist'));
 app.use(express.static('src/assets'));

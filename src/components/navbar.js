@@ -30,10 +30,10 @@ const navItems = [{
 export default function NavBar(style) {
   const appContainer = document.getElementById('appContainer');
   const navContainer = document.createElement('div');
-  if (style === 1){
+  if (style === "light-theme"){
     navContainer.className = 'navContainer';
-  } else if (style === 2) {
-    navContainer.className = 'nav2 navContainer';
+  } else if (style === "dark-theme") {
+    navContainer.className = 'navContainer dark-theme';
   }
   navItems.forEach(function (item) {
     const navItem = document.createElement('div');

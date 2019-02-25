@@ -11,10 +11,17 @@ const location = history.location;
 
 function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
-  new NavBar(1);
-  const header = new Header();
+  // specify 'dark-theme' or 'light-theme' in the new NavBar instance.
+  const colorTheme = 'dark-theme';
+
+  new NavBar(colorTheme);
+  const header = new Header(colorTheme);
   const pageContent = document.createElement('div');
-  pageContent.className = 'pageContent';
+  if (colorTheme === "light-theme"){
+    pageContent.className = 'pageContent';
+  } else if (colorTheme === "dark-theme") {
+    pageContent.className = 'pageContent dark-theme';
+  }
   appContainer.appendChild(pageContent);
 
   header.renderHeaderProfile('Test User');
@@ -22,18 +29,18 @@ function layoutConstructor(){
   function renderContent(path){
     pageContent.innerHTML = '';
     if (path == '/' || path == '/dashboard'){
-      dashboard();
+      dashboard(colorTheme);
       header.renderHeaderTitle('Dashboard');
     }
     else if (path == '/organizations'){
       header.renderHeaderTitle('Organizations');
     }
     else if (path == '/fundraisers'){
-      fundraisers();
+      fundraisers(colorTheme);
       header.renderHeaderTitle('Fundraisers');
     }
     else if (path == '/people'){
-      users();
+      users(colorTheme);
       header.renderHeaderTitle('People');
     }
   }

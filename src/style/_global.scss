@@ -6,7 +6,6 @@ body {
     margin:0;
     padding:0;
     height:100%;
-    background:#f0f4f7;
 }
 p {
     font-size:15px;
@@ -15,6 +14,7 @@ p {
 
 #appContainer {
     height:100%;
+    background: #434242;
 }
 .pageContent {
     width:calc(100% - 200px);

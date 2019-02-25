@@ -1,7 +1,7 @@
 /* Header Component*/
 import PrimaryBtn from '../utilities/buttons';
 
-export default function Header() {
+export default function Header(style) {
   const appContainer = document.getElementById('appContainer');
   const headerContainer = document.createElement('div');
   const headerTitle = document.createElement('div');
@@ -24,6 +24,11 @@ export default function Header() {
   headerContainer.appendChild(addBtn.btn);
   addBtn.btn.style.display = 'none';
 
+  if (style === "light-theme"){
+    headerContainer.className = 'headerContainer';
+  } else if (style === "dark-theme") {
+    headerContainer.className = 'headerContainer dark-theme';
+  }
 
   /* Render to DOM */
   appContainer.appendChild(headerContainer);

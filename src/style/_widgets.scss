@@ -5,17 +5,41 @@
   display:inline-block;
   margin:10px;
   vertical-align:top;
+  .widgetHeader {
+    color:#777;
+    padding:10px 15px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+    font-weight:bold;
+  }
+  .widgetContent {
+    padding:10px 15px;
+  }
 }
-.widgetHeader {
-  color:#777;
-  padding:10px 15px;
-  border-bottom:1px solid #ddd;
-  font-size:15px;
-  font-weight:bold;
+
+//dark theme
+.pageContent.dark-theme {
+  .widget{
+    background:$dark1;
+    box-shadow: 0 0 4px #333;
+    .widgetHeader {
+      color:#fff;
+      padding:10px 15px;
+      border-bottom:1px solid #333;
+      font-size:15px;
+      font-weight:bold;
+    }
+    .widgetContent {
+      padding:10px 15px;
+      p {
+        color:#dedede;
+      }
+    }
+  }
 }
-.widgetContent {
-  padding:10px 15px;
-}
+
+
+
 
 /* WIDGET WIDTH CLASSES */
 .width-25 {
