@@ -1,13 +1,13 @@
 /* Header Component*/
 import PrimaryBtn from '../utilities/buttons';
 
-export default function Header(style) {
+var Header = function(style) {
   const appContainer = document.getElementById('appContainer');
-  const headerContainer = document.createElement('div');
+  var headerContainer = document.createElement('div');
   const headerTitle = document.createElement('div');
   const headerAccount = document.createElement('div');
   const headerProfile = document.createElement('div');
-  const headerProfileDropdown = document.createElement('div');
+  var headerProfileDropdown = document.createElement('div');
 
   headerContainer.className = 'headerContainer';
   headerTitle.className = 'headerTitle';
@@ -55,9 +55,22 @@ export default function Header(style) {
     userName.className = 'headerUserName';
     headerProfileDropdown.innerHTML = '<i class="material-icons">person</i>';
   }
+
+  function toggleTheme(color){
+    if (color === "light-theme"){
+      headerContainer.className = 'headerContainer';
+    } else if (color === "dark-theme") {
+      headerContainer.className = 'headerContainer dark-theme';
+    }
+  }
+
   return {
     renderHeaderTitle: renderHeaderTitle,
     renderHeaderAccount: renderHeaderAccount,
-    renderHeaderProfile: renderHeaderProfile
+    renderHeaderProfile: renderHeaderProfile,
+    profileIcon: headerAccount,
+    theme: toggleTheme
   }
-}
+};
+
+module.exports = Header;

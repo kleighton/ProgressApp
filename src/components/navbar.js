@@ -27,9 +27,9 @@ const navItems = [{
   }
 ];
 
-export default function NavBar(style) {
-  const appContainer = document.getElementById('appContainer');
-  const navContainer = document.createElement('div');
+var NavBar = function(style) {
+  var appContainer = document.getElementById('appContainer');
+  var navContainer = document.createElement('div');
   if (style === "light-theme"){
     navContainer.className = 'navContainer';
   } else if (style === "dark-theme") {
@@ -63,5 +63,18 @@ export default function NavBar(style) {
     });
     
   });
+
+  function toggleTheme(color){
+    if (color === "light-theme"){
+      navContainer.className = 'navContainer';
+    } else if (color === "dark-theme") {
+      navContainer.className = 'navContainer dark-theme';
+    }
+  }
   appContainer.appendChild(navContainer);
+
+  return {
+    theme: toggleTheme
+  }
 }
+module.exports = NavBar;

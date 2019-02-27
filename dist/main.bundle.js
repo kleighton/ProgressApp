@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  font-family: 'open sans',arial,sans-serif;\n  margin: 0;\n  padding: 0;\n  height: 100%; }\n\np {\n  font-size: 15px;\n  color: #818d9a; }\n\n#appContainer {\n  height: 100%;\n  background: #434242; }\n\n.pageContent {\n  width: calc(100% - 200px);\n  height: calc(100% - 80px);\n  margin-top: 60px;\n  margin-left: 180px;\n  vertical-align: top;\n  display: inline-block;\n  padding: 10px; }\n\n.c-primary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: #3cbfdc;\n  border: 1px solid #3cbfdc;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  display: inline;\n  cursor: pointer; }\n  .c-primary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce; }\n\n.c-secondary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: transparent;\n  border: 1px solid #bbbbbb;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  color: #626262;\n  display: inline; }\n  .c-secondary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce;\n    color: white; }\n\n.navContainer {\n  height: 100%;\n  background: #27b7d7;\n  width: 180px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.navItem {\n  color: #fff;\n  text-align: left;\n  padding: 15px 18px 15px 22px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px; }\n\n.navItem:hover,\n.navItem.active {\n  background: #0797b7; }\n\n.navItem:hover .navItemTool {\n  display: block; }\n\n.navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.navItem > i {\n  vertical-align: bottom;\n  margin-right: 10px; }\n\n.navContainer.dark-theme {\n  height: 100%;\n  background: #222323;\n  width: 180px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n  .navContainer.dark-theme .navItem {\n    color: #fff;\n    text-align: left;\n    padding: 15px 18px 15px 22px;\n    cursor: pointer;\n    transition: .1s ease;\n    position: relative;\n    height: 25px; }\n    .navContainer.dark-theme .navItem i {\n      opacity: .6; }\n  .navContainer.dark-theme .navItem:hover,\n  .navContainer.dark-theme .navItem.active {\n    background: #27b7d7;\n    color: #fff; }\n    .navContainer.dark-theme .navItem:hover i,\n    .navContainer.dark-theme .navItem.active i {\n      opacity: 1;\n      color: #fff; }\n  .navContainer.dark-theme .navItem:hover .navItemTool {\n    display: block; }\n  .navContainer.dark-theme .navItemTool {\n    display: none;\n    position: absolute;\n    background: rgba(0, 0, 0, 0.8);\n    padding: 10px 20px;\n    font-size: 14px;\n    width: 100px;\n    text-align: left;\n    border-radius: 5px;\n    left: 65px;\n    top: calc(50% - 18px); }\n  .navContainer.dark-theme .navItemTool:after {\n    content: '';\n    position: absolute;\n    left: -7px;\n    top: 12px;\n    border-right: 7px solid rgba(0, 0, 0, 0.8);\n    border-top: 7px solid transparent;\n    border-bottom: 7px solid transparent; }\n\n.headerContainer {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 224px);\n  margin-left: 180px;\n  padding: 16px 22px;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  z-index: 9; }\n\n.headerTitle {\n  font-size: 15px;\n  font-weight: 600;\n  color: #555;\n  display: inline-block; }\n\n.headerAccount {\n  float: right;\n  font-size: 14px;\n  vertical-align: top;\n  color: #888;\n  cursor: pointer; }\n  .headerAccount:hover .headerProfileDropdown {\n    background: #27b7d7; }\n    .headerAccount:hover .headerProfileDropdown i {\n      color: #fff; }\n  .headerAccount:hover .headerUserName {\n    color: #333; }\n\n.headerUserName {\n  font-size: 15px;\n  font-weight: 500;\n  color: #888;\n  position: absolute;\n  padding: 10px 55px;\n  right: 22px;\n  top: 7px; }\n\n.headerProfileDropdown {\n  padding: 5px;\n  border: 2px solid #27b7d7;\n  border-radius: 50%;\n  width: 20px;\n  height: 20px;\n  position: absolute;\n  right: 25px;\n  top: 10px; }\n  .headerProfileDropdown > i {\n    font-size: 20px;\n    float: right;\n    color: #888;\n    margin-left: 7px;\n    position: relative; }\n\n/*** Dark theme ***/\n.headerContainer.dark-theme {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 224px);\n  margin-left: 180px;\n  padding: 16px 22px;\n  background: #27b7d7;\n  box-shadow: 0 0 3px #27b7d7;\n  z-index: 9; }\n  .headerContainer.dark-theme .headerTitle {\n    font-size: 15px;\n    font-weight: 600;\n    color: #fff;\n    display: inline-block; }\n  .headerContainer.dark-theme .headerAccount {\n    float: right;\n    font-size: 14px;\n    vertical-align: top;\n    color: #fff;\n    cursor: pointer; }\n    .headerContainer.dark-theme .headerAccount:hover .headerProfileDropdown {\n      background: #fff; }\n      .headerContainer.dark-theme .headerAccount:hover .headerProfileDropdown i {\n        color: #27b7d7; }\n    .headerContainer.dark-theme .headerAccount:hover .headerUserName {\n      color: #fff; }\n  .headerContainer.dark-theme .headerUserName {\n    font-size: 15px;\n    font-weight: 500;\n    color: #fff;\n    position: absolute;\n    padding: 10px 55px;\n    right: 22px;\n    top: 7px; }\n  .headerContainer.dark-theme .headerProfileDropdown {\n    padding: 5px;\n    border: 2px solid #eee;\n    border-radius: 50%;\n    width: 20px;\n    height: 20px;\n    position: absolute;\n    right: 25px;\n    top: 10px; }\n    .headerContainer.dark-theme .headerProfileDropdown > i {\n      font-size: 20px;\n      float: right;\n      color: #fff;\n      margin-left: 7px;\n      position: relative; }\n\n.widget {\n  background: #fff;\n  border-radius: 5px;\n  box-shadow: 0 0 4px #ddd;\n  display: inline-block;\n  margin: 10px;\n  vertical-align: top; }\n  .widget .widgetHeader {\n    color: #777;\n    padding: 10px 15px;\n    border-bottom: 1px solid #ddd;\n    font-size: 15px;\n    font-weight: bold; }\n  .widget .widgetContent {\n    padding: 10px 15px; }\n\n.pageContent.dark-theme .widget {\n  background: #222323;\n  box-shadow: 0 0 4px #333; }\n  .pageContent.dark-theme .widget .widgetHeader {\n    color: #fff;\n    padding: 10px 15px;\n    border-bottom: 1px solid #333;\n    font-size: 15px;\n    font-weight: bold; }\n  .pageContent.dark-theme .widget .widgetContent {\n    padding: 10px 15px; }\n    .pageContent.dark-theme .widget .widgetContent p {\n      color: #dedede; }\n\n/* WIDGET WIDTH CLASSES */\n.width-25 {\n  width: calc(25% - 22px); }\n\n.width-30 {\n  width: calc(33.3333% - 22px); }\n\n.width-50 {\n  width: calc(50% - 22px); }\n\n.width-70 {\n  width: calc(66.6666% - 22px); }\n\n.width-100 {\n  width: calc(100% - 22px); }\n\n@media screen and (max-width: 1200px) {\n  .width-25 {\n    width: calc(33% - 22px); } }\n\n@media screen and (max-width: 900px) {\n  .width-25 {\n    width: calc(50% - 22px); }\n  .width-30 {\n    width: calc(50% - 22px); } }\n\n@media screen and (max-width: 700px) {\n  .width-25 {\n    width: calc(100% - 22px); }\n  .width-30 {\n    width: calc(100% - 22px); }\n  .width-50 {\n    width: calc(100% - 22px); }\n  .width-70 {\n    width: calc(100% - 22px); } }\n", ""]);
+exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  font-family: 'open sans',arial,sans-serif;\n  margin: 0;\n  padding: 0;\n  height: 100%; }\n\np {\n  font-size: 15px;\n  color: #818d9a; }\n\n#appContainer {\n  height: 100%;\n  background: #f0f4f7; }\n  #appContainer.dark-theme {\n    background: #434242; }\n\n.pageContent {\n  width: calc(100% - 200px);\n  height: calc(100% - 80px);\n  margin-top: 60px;\n  margin-left: 180px;\n  vertical-align: top;\n  display: inline-block;\n  padding: 10px; }\n\n.c-primary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: #3cbfdc;\n  border: 1px solid #3cbfdc;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  display: inline;\n  cursor: pointer; }\n  .c-primary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce; }\n\n.c-secondary-btn {\n  padding: 5px 15px;\n  margin: 0 15px;\n  background: transparent;\n  border: 1px solid #bbbbbb;\n  border-radius: 4px;\n  color: white;\n  font-size: 14px;\n  color: #626262;\n  display: inline; }\n  .c-secondary-btn:hover {\n    background: #25b0ce;\n    border: 1px solid #25b0ce;\n    color: white; }\n\n.navContainer {\n  height: 100%;\n  background: #27b7d7;\n  width: 180px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n\n.navItem {\n  color: #fff;\n  text-align: left;\n  padding: 15px 18px 15px 22px;\n  cursor: pointer;\n  transition: .1s ease;\n  position: relative;\n  height: 25px; }\n\n.navItem:hover,\n.navItem.active {\n  background: #0797b7; }\n\n.navItem:hover .navItemTool {\n  display: block; }\n\n.navItemTool {\n  display: none;\n  position: absolute;\n  background: rgba(0, 0, 0, 0.8);\n  padding: 10px 20px;\n  font-size: 14px;\n  width: 100px;\n  text-align: left;\n  border-radius: 5px;\n  left: 65px;\n  top: calc(50% - 18px); }\n\n.navItemTool:after {\n  content: '';\n  position: absolute;\n  left: -7px;\n  top: 12px;\n  border-right: 7px solid rgba(0, 0, 0, 0.8);\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent; }\n\n.navItem > i {\n  vertical-align: bottom;\n  margin-right: 10px; }\n\n.navContainer.dark-theme {\n  height: 100%;\n  background: #222323;\n  width: 180px;\n  display: inline-block;\n  position: fixed;\n  z-index: 10; }\n  .navContainer.dark-theme .navItem {\n    color: #fff;\n    text-align: left;\n    padding: 15px 18px 15px 22px;\n    cursor: pointer;\n    transition: .1s ease;\n    position: relative;\n    height: 25px; }\n    .navContainer.dark-theme .navItem i {\n      opacity: .6; }\n  .navContainer.dark-theme .navItem:hover,\n  .navContainer.dark-theme .navItem.active {\n    background: #27b7d7;\n    color: #fff; }\n    .navContainer.dark-theme .navItem:hover i,\n    .navContainer.dark-theme .navItem.active i {\n      opacity: 1;\n      color: #fff; }\n  .navContainer.dark-theme .navItem:hover .navItemTool {\n    display: block; }\n  .navContainer.dark-theme .navItemTool {\n    display: none;\n    position: absolute;\n    background: rgba(0, 0, 0, 0.8);\n    padding: 10px 20px;\n    font-size: 14px;\n    width: 100px;\n    text-align: left;\n    border-radius: 5px;\n    left: 65px;\n    top: calc(50% - 18px); }\n  .navContainer.dark-theme .navItemTool:after {\n    content: '';\n    position: absolute;\n    left: -7px;\n    top: 12px;\n    border-right: 7px solid rgba(0, 0, 0, 0.8);\n    border-top: 7px solid transparent;\n    border-bottom: 7px solid transparent; }\n\n.headerContainer {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 224px);\n  margin-left: 180px;\n  padding: 16px 22px;\n  background: #fff;\n  box-shadow: 0 0 3px #e7e7e7;\n  z-index: 9; }\n\n.headerTitle {\n  font-size: 15px;\n  font-weight: 600;\n  color: #555;\n  display: inline-block; }\n\n.headerAccount {\n  float: right;\n  font-size: 14px;\n  vertical-align: top;\n  color: #888;\n  cursor: pointer; }\n  .headerAccount:hover .headerProfileDropdown {\n    background: #27b7d7; }\n    .headerAccount:hover .headerProfileDropdown i {\n      color: #fff; }\n  .headerAccount:hover .headerUserName {\n    color: #333; }\n\n.headerUserName {\n  font-size: 15px;\n  font-weight: 500;\n  color: #888;\n  position: absolute;\n  padding: 10px 55px;\n  right: 22px;\n  top: 7px; }\n\n.headerProfileDropdown {\n  padding: 5px;\n  border: 2px solid #27b7d7;\n  border-radius: 50%;\n  width: 20px;\n  height: 20px;\n  position: absolute;\n  right: 25px;\n  top: 10px; }\n  .headerProfileDropdown > i {\n    font-size: 20px;\n    float: right;\n    color: #888;\n    margin-left: 7px;\n    position: relative; }\n\n/*** Dark theme ***/\n.headerContainer.dark-theme {\n  position: fixed;\n  top: 0;\n  width: calc(100% - 224px);\n  margin-left: 180px;\n  padding: 16px 22px;\n  background: #27b7d7;\n  box-shadow: 0 0 3px #27b7d7;\n  z-index: 9; }\n  .headerContainer.dark-theme .headerTitle {\n    font-size: 15px;\n    font-weight: 600;\n    color: #fff;\n    display: inline-block; }\n  .headerContainer.dark-theme .headerAccount {\n    float: right;\n    font-size: 14px;\n    vertical-align: top;\n    color: #fff;\n    cursor: pointer; }\n    .headerContainer.dark-theme .headerAccount:hover .headerProfileDropdown {\n      background: #fff; }\n      .headerContainer.dark-theme .headerAccount:hover .headerProfileDropdown i {\n        color: #27b7d7; }\n    .headerContainer.dark-theme .headerAccount:hover .headerUserName {\n      color: #fff; }\n  .headerContainer.dark-theme .headerUserName {\n    font-size: 15px;\n    font-weight: 500;\n    color: #fff;\n    position: absolute;\n    padding: 10px 55px;\n    right: 22px;\n    top: 7px; }\n  .headerContainer.dark-theme .headerProfileDropdown {\n    padding: 5px;\n    border: 2px solid #eee;\n    border-radius: 50%;\n    width: 20px;\n    height: 20px;\n    position: absolute;\n    right: 25px;\n    top: 10px; }\n    .headerContainer.dark-theme .headerProfileDropdown > i {\n      font-size: 20px;\n      float: right;\n      color: #fff;\n      margin-left: 7px;\n      position: relative; }\n\n.widget {\n  background: #fff;\n  border-radius: 5px;\n  box-shadow: 0 0 4px #ddd;\n  display: inline-block;\n  margin: 10px;\n  vertical-align: top; }\n  .widget .widgetHeader {\n    color: #777;\n    padding: 10px 15px;\n    border-bottom: 1px solid #ddd;\n    font-size: 15px;\n    font-weight: bold; }\n  .widget .widgetContent {\n    padding: 10px 15px; }\n\n.pageContent.dark-theme .widget {\n  background: #222323;\n  box-shadow: 0 0 4px #333; }\n  .pageContent.dark-theme .widget .widgetHeader {\n    color: #fff;\n    padding: 10px 15px;\n    border-bottom: 1px solid #333;\n    font-size: 15px;\n    font-weight: bold; }\n  .pageContent.dark-theme .widget .widgetContent {\n    padding: 10px 15px; }\n    .pageContent.dark-theme .widget .widgetContent p {\n      color: #dedede; }\n\n/* WIDGET WIDTH CLASSES */\n.width-25 {\n  width: calc(25% - 22px); }\n\n.width-30 {\n  width: calc(33.3333% - 22px); }\n\n.width-50 {\n  width: calc(50% - 22px); }\n\n.width-70 {\n  width: calc(66.6666% - 22px); }\n\n.width-100 {\n  width: calc(100% - 22px); }\n\n@media screen and (max-width: 1200px) {\n  .width-25 {\n    width: calc(33% - 22px); } }\n\n@media screen and (max-width: 900px) {\n  .width-25 {\n    width: calc(50% - 22px); }\n  .width-30 {\n    width: calc(50% - 22px); } }\n\n@media screen and (max-width: 700px) {\n  .width-25 {\n    width: calc(100% - 22px); }\n  .width-30 {\n    width: calc(100% - 22px); }\n  .width-50 {\n    width: calc(100% - 22px); }\n  .width-70 {\n    width: calc(100% - 22px); } }\n", ""]);
 
 // exports
 
@@ -1339,24 +1339,19 @@ module.exports = warning;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Header;
-
 var _buttons = __webpack_require__(/*! ../utilities/buttons */ "./src/utilities/buttons.js");
 
 var _buttons2 = _interopRequireDefault(_buttons);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Header(style) {
+var Header = function (style) {
   const appContainer = document.getElementById('appContainer');
-  const headerContainer = document.createElement('div');
+  var headerContainer = document.createElement('div');
   const headerTitle = document.createElement('div');
   const headerAccount = document.createElement('div');
   const headerProfile = document.createElement('div');
-  const headerProfileDropdown = document.createElement('div');
+  var headerProfileDropdown = document.createElement('div');
 
   headerContainer.className = 'headerContainer';
   headerTitle.className = 'headerTitle';
@@ -1404,12 +1399,26 @@ function Header(style) {
     userName.className = 'headerUserName';
     headerProfileDropdown.innerHTML = '<i class="material-icons">person</i>';
   }
+
+  function toggleTheme(color) {
+    if (color === "light-theme") {
+      headerContainer.className = 'headerContainer';
+    } else if (color === "dark-theme") {
+      headerContainer.className = 'headerContainer dark-theme';
+    }
+  }
+
   return {
     renderHeaderTitle: renderHeaderTitle,
     renderHeaderAccount: renderHeaderAccount,
-    renderHeaderProfile: renderHeaderProfile
+    renderHeaderProfile: renderHeaderProfile,
+    profileIcon: headerAccount,
+    theme: toggleTheme
   };
-} /* Header Component*/
+}; /* Header Component*/
+
+
+module.exports = Header;
 
 /***/ }),
 
@@ -1422,11 +1431,6 @@ function Header(style) {
 
 "use strict";
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = NavBar;
 
 var _layoutConstructor = __webpack_require__(/*! ../core/layoutConstructor */ "./src/core/layoutConstructor.js");
 
@@ -1460,9 +1464,9 @@ const navItems = [{
   icon: 'settings'
 }];
 
-function NavBar(style) {
-  const appContainer = document.getElementById('appContainer');
-  const navContainer = document.createElement('div');
+var NavBar = function (style) {
+  var appContainer = document.getElementById('appContainer');
+  var navContainer = document.createElement('div');
   if (style === "light-theme") {
     navContainer.className = 'navContainer';
   } else if (style === "dark-theme") {
@@ -1494,8 +1498,21 @@ function NavBar(style) {
       }
     });
   });
+
+  function toggleTheme(color) {
+    if (color === "light-theme") {
+      navContainer.className = 'navContainer';
+    } else if (color === "dark-theme") {
+      navContainer.className = 'navContainer dark-theme';
+    }
+  }
   appContainer.appendChild(navContainer);
-}
+
+  return {
+    theme: toggleTheme
+  };
+};
+module.exports = NavBar;
 
 /***/ }),
 
@@ -1620,20 +1637,46 @@ const location = history.location;
 
 function layoutConstructor() {
   const appContainer = document.getElementById('appContainer');
-  // specify 'dark-theme' or 'light-theme' in the new NavBar instance.
-  const colorTheme = 'dark-theme';
 
-  new _navbar2.default(colorTheme);
-  const header = new _header2.default(colorTheme);
-  const pageContent = document.createElement('div');
+  // specify 'dark-theme' or 'light-theme' in the new NavBar instance.
+  var colorTheme = 'dark-theme';
+
+  var navbar = new _navbar2.default(colorTheme);
+  var header = new _header2.default(colorTheme);
+  var pageContent = document.createElement('div');
   if (colorTheme === "light-theme") {
     pageContent.className = 'pageContent';
   } else if (colorTheme === "dark-theme") {
     pageContent.className = 'pageContent dark-theme';
+    appContainer.className = 'dark-theme';
   }
   appContainer.appendChild(pageContent);
 
   header.renderHeaderProfile('Test User');
+
+  var themeToggle = header.profileIcon;
+  themeToggle.addEventListener('click', function () {
+    if (colorTheme === "light-theme") {
+      colorTheme = 'dark-theme';
+      appContainer.className = 'dark-theme';
+    } else if (colorTheme === 'dark-theme') {
+      colorTheme = "light-theme";
+      appContainer.className = '';
+    }
+    toggleTheme();
+  });
+
+  function toggleTheme() {
+    navbar.theme(colorTheme);
+    header.theme(colorTheme);
+    navbar.theme(colorTheme);
+    if (colorTheme === "light-theme") {
+      pageContent.className = 'pageContent';
+    } else if (colorTheme === "dark-theme") {
+      pageContent.className = 'pageContent dark-theme';
+      appContainer.className = 'dark-theme';
+    }
+  }
 
   function renderContent(path) {
     pageContent.innerHTML = '';
@@ -1654,7 +1697,7 @@ function layoutConstructor() {
     renderContent: renderContent
   };
 }
-const layout = layoutConstructor();
+var layout = layoutConstructor();
 layout.renderContent(location.pathname);
 
 exports.default = layout;

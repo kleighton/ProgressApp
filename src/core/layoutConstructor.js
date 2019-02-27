@@ -11,20 +11,46 @@ const location = history.location;
 
 function layoutConstructor(){ 
   const appContainer = document.getElementById('appContainer');
-  // specify 'dark-theme' or 'light-theme' in the new NavBar instance.
-  const colorTheme = 'dark-theme';
 
-  new NavBar(colorTheme);
-  const header = new Header(colorTheme);
-  const pageContent = document.createElement('div');
+  // specify 'dark-theme' or 'light-theme' in the new NavBar instance.
+  var colorTheme = 'dark-theme';
+
+  var navbar = new NavBar(colorTheme);
+  var header = new Header(colorTheme);
+  var pageContent = document.createElement('div');
   if (colorTheme === "light-theme"){
     pageContent.className = 'pageContent';
   } else if (colorTheme === "dark-theme") {
     pageContent.className = 'pageContent dark-theme';
+    appContainer.className = 'dark-theme';
   }
   appContainer.appendChild(pageContent);
 
   header.renderHeaderProfile('Test User');
+
+  var themeToggle = header.profileIcon;
+  themeToggle.addEventListener('click',function(){
+    if (colorTheme === "light-theme"){
+      colorTheme = 'dark-theme'
+      appContainer.className = 'dark-theme';
+    } else if (colorTheme === 'dark-theme') {
+      colorTheme = "light-theme";
+      appContainer.className = '';
+    }
+    toggleTheme();
+  });
+
+  function toggleTheme(){
+    navbar.theme(colorTheme);
+    header.theme(colorTheme);
+    navbar.theme(colorTheme);
+    if (colorTheme === "light-theme"){
+      pageContent.className = 'pageContent';
+    } else if (colorTheme === "dark-theme") {
+      pageContent.className = 'pageContent dark-theme';
+      appContainer.className = 'dark-theme';
+    }
+  }
 
   function renderContent(path){
     pageContent.innerHTML = '';
@@ -48,7 +74,7 @@ function layoutConstructor(){
     renderContent:renderContent
   };
 }
-const layout = layoutConstructor();
+var layout = layoutConstructor();
 layout.renderContent(location.pathname);
 
 export default layout;
