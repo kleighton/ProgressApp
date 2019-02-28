@@ -1,6 +1,8 @@
 
+/* Color variables */
+
 // blue
-$blue: #27b7d7;
+$blue: #1a91c4;
 
 $blue1: lighten($blue,5);
 $blue2: lighten($blue,10);
@@ -28,7 +30,9 @@ $grey-4: darken($grey,20);
 // green
 $green1: #00cc00;
 
-//dark theme
-
+//dark theme - specific colors
 $dark1: #222323;
 $dark2: #434242;
+$dark3: #213136;
+$dark4: #3d4a54;
+$dark5: #15252A;

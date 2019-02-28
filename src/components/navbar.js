@@ -61,8 +61,22 @@ var NavBar = function(style) {
         navItem.className = 'navItem';
       }
     });
-    
   });
+
+    /** Start ToDo **/
+
+  //Toggle theme color button
+  var toggleThemeBtn = document.createElement('div');
+  toggleThemeBtn.className = 'toggleThemeBtn';
+  var themeBtnText = style === 'dark-theme' ? 'Lights On?' : 'Lights Off?';
+  toggleThemeBtn.innerHTML = themeBtnText;
+  var toggleThemeIcon = document.createElement('div');
+  toggleThemeIcon.className = 'toggleThemeIcon';
+  toggleThemeIcon.innerHTML = '<i class="material-icons">highlight</i>';
+  toggleThemeBtn.appendChild(toggleThemeIcon);
+  //navContainer.appendChild(toggleThemeBtn);
+
+  /** End ToDo **/
 
   function toggleTheme(color){
     if (color === "light-theme"){
@@ -71,6 +85,7 @@ var NavBar = function(style) {
       navContainer.className = 'navContainer dark-theme';
     }
   }
+
   appContainer.appendChild(navContainer);
 
   return {

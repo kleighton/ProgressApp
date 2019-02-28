@@ -1,6 +1,6 @@
 .navContainer {
   height: 100%;
-  background: #27b7d7;
+  background: $blue;
   width:180px;
   display:inline-block;
   position:fixed;
@@ -9,7 +9,7 @@
 .navItem {
   color:#fff;
   text-align:left;
-  padding:15px 18px 15px 22px;
+  padding:16px 18px 16px 22px;
   cursor: pointer;
   transition:.1s ease;
   position:relative;
@@ -17,7 +17,7 @@
 }
 .navItem:hover,
 .navItem.active {
-  background:#0797b7;
+  background:$blue-2;
 }
 .navItem:hover .navItemTool {
   display:block;
@@ -52,7 +52,7 @@
 // dark-theme
   .navContainer.dark-theme {
     height: 100%;
-    background: #222323;
+    background: #213136;
     width:180px;
     display:inline-block;
     position:fixed;
@@ -61,7 +61,7 @@
   .navItem {
     color:#fff;
   text-align:left;
-  padding:15px 18px 15px 22px;
+  padding:16px 18px 16px 22px;
   cursor: pointer;
   transition:.1s ease;
   position:relative;
@@ -72,7 +72,7 @@
   }
   .navItem:hover,
   .navItem.active {
-    background:#27b7d7;
+    background:$dark5;
     color:#fff;
     i {
       opacity:1;
@@ -102,5 +102,18 @@
     border-right:7px solid rgba(0,0,0,.8);
     border-top:7px solid transparent;
     border-bottom:7px solid transparent;
+  }
+  .toggleThemeBtn {
+    position:absolute;
+    bottom:0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:7px 12px;
+    margin:0 auto;
+    color:#fff;
+    .toggleThemeIcon {
+      display:inline-block;
+      color:#efefef;
+    }
   }
 }

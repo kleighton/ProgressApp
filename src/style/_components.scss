@@ -3,16 +3,16 @@
   &-primary-btn {
     padding: 5px 15px;
     margin:0 15px;
-    background:$blue1;
-    border:1px solid $blue1;
+    background:$blue2;
+    border:1px solid $blue2;
     border-radius:4px;
     color:white;
     font-size:14px;
     display:inline;
     cursor:pointer;
     &:hover {
-      background:darken($blue1,7);
-      border:1px solid darken($blue1,7);
+      background:$blue-2;
+      border:$blue-2;
     }
   }
 
@@ -27,8 +27,8 @@
     color:$grey-3;
     display:inline;
     &:hover {
-      background:darken($blue1,7);
-      border:1px solid darken($blue1,7);
+      background: $blue;
+      border:$blue;
       color:white;
     }
   }
