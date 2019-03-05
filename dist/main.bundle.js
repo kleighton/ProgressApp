@@ -1451,16 +1451,16 @@ const navItems = [{
   text: 'Dashboard',
   icon: 'camera'
 }, {
-  path: '/organizations',
-  text: 'Organizations',
-  icon: 'person'
-}, {
   path: '/fundraisers',
   text: 'Fundraisers',
   icon: 'insert_chart'
 }, {
   path: '/people',
   text: 'People',
+  icon: 'person'
+}, {
+  path: '/settings',
+  text: 'Settings',
   icon: 'settings'
 }];
 
@@ -1699,14 +1699,14 @@ function layoutConstructor() {
     if (path == '/' || path == '/dashboard') {
       (0, _dashboard2.default)(colorTheme);
       header.renderHeaderTitle('Dashboard');
-    } else if (path == '/organizations') {
-      header.renderHeaderTitle('Organizations');
     } else if (path == '/fundraisers') {
       (0, _fundraisers2.default)(colorTheme);
       header.renderHeaderTitle('Fundraisers');
     } else if (path == '/people') {
       (0, _users2.default)(colorTheme);
       header.renderHeaderTitle('People');
+    } else if (path == '/settings') {
+      header.renderHeaderTitle('settings');
     }
   }
   return {

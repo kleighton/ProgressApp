@@ -58,9 +58,6 @@ function layoutConstructor(){
       dashboard(colorTheme);
       header.renderHeaderTitle('Dashboard');
     }
-    else if (path == '/organizations'){
-      header.renderHeaderTitle('Organizations');
-    }
     else if (path == '/fundraisers'){
       fundraisers(colorTheme);
       header.renderHeaderTitle('Fundraisers');
@@ -68,6 +65,9 @@ function layoutConstructor(){
     else if (path == '/people'){
       users(colorTheme);
       header.renderHeaderTitle('People');
+    }
+    else if (path == '/settings'){
+      header.renderHeaderTitle('settings');
     }
   }
   return {

@@ -11,11 +11,6 @@ const navItems = [{
     icon: 'camera'
   },
   {
-    path: '/organizations',
-    text: 'Organizations',
-    icon: 'person'
-  },
-  {
     path: '/fundraisers',
     text: 'Fundraisers',
     icon: 'insert_chart'
@@ -23,6 +18,11 @@ const navItems = [{
   {
     path: '/people',
     text: 'People',
+    icon: 'person'
+  },
+  {
+    path: '/settings',
+    text: 'Settings',
     icon: 'settings'
   }
 ];
