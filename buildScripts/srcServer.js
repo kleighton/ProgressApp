@@ -28,7 +28,7 @@ webpack(config).run((err) => {
   app.get('/dashboard',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
-  app.get('/organizations',function(req,res){
+  app.get('/settings',function(req,res){
       res.sendFile(path.join(__dirname,'../dist/index.html'));
   });
   app.get('/fundraisers',function(req,res){

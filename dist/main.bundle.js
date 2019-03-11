@@ -1382,7 +1382,9 @@ var Header = function (style) {
     headerTitle.innerHTML = title;
     if (title != 'Dashboard') {
       addBtn.btn.style.display = 'inline';
-      addBtn.update('Add ' + title);
+      addBtn.init('Add ' + title, function () {
+        alert('add ' + title);
+      });
     } else {
       addBtn.btn.style.display = 'none';
     }
@@ -1706,7 +1708,7 @@ function layoutConstructor() {
       (0, _users2.default)(colorTheme);
       header.renderHeaderTitle('People');
     } else if (path == '/settings') {
-      header.renderHeaderTitle('settings');
+      header.renderHeaderTitle('Settings');
     }
   }
   return {
@@ -1854,29 +1856,26 @@ if(false) {}
 "use strict";
 
 
-const PrimaryBtn = function (text, _callback) {
+const PrimaryBtn = function (text) {
     const btn = document.createElement('btn');
     btn.setAttribute('type', 'button');
     btn.className = 'c-primary-btn';
     btn.innerHTML = text;
-    if (_callback) {
-        btn.addEventListener('click', function (e) {
-            _callback(e);
-        });
-    }
 
     /* Methods */
-    function update(text, _callback) {
-        btn.removeEventListener('click', {});
+    function init(text, _callback) {
         btn.innerHTML = text;
         if (_callback) {
+            btn.removeEventListener('click', function (e) {
+                _callback(e);
+            }, false);
             btn.addEventListener('click', function (e) {
                 _callback(e);
-            });
+            }, false);
         }
     }
     return {
-        update: update,
+        init: init,
         btn: btn
     };
 };

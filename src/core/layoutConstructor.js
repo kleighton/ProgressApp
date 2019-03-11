@@ -67,7 +67,7 @@ function layoutConstructor(){
       header.renderHeaderTitle('People');
     }
     else if (path == '/settings'){
-      header.renderHeaderTitle('settings');
+      header.renderHeaderTitle('Settings');
     }
   }
   return {
